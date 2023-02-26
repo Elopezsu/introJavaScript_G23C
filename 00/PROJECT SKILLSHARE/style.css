@@ -160,12 +160,27 @@ nav ul li a{
     text-align: center;
 }
 
+.more-info p{
+    margin: 18px 0  35x;
+}
 
+.more-info h2{
+    margin: 50px 0 0;
+}
+
+.highlight{
+    background-color: #FFADF9;
+    color: #FF3300;
+    padding: 5px 10px;
+    line-height: 50px;
+    display: inline;
+    font-weight: 800;
+}
 
 /*
  <div class="more-info" id="more-info">
         <h2>Join Our Fan Club</h2>
-        <p>Every week we have <span class ="highlight"> a party.</highlight>. If you want to join us then join our Fan club.
+        <p>Every week we have <span class ="highlight"> a party.</span>. If you want to join us then join our Fan club.
             Members will also receive a picture of all in all kinds of shapes and sizes. Cool
             huh?</p>
             <button class="cta">Sign me Up!</button>
