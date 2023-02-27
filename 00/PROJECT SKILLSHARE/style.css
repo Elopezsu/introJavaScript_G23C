@@ -270,8 +270,132 @@ footer a{
 
 .popup{
     display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index:2;
 }
 
+.popup.show{
+    display: block;
+}
+
+.popup .blanket{
+    background-color:rgba(0,0,0,.7);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+.popup .content{
+    box-sizing: border-box;
+    padding: 30px 40px;
+    width: 960px;
+    height: 500px;
+    background-color: white;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -250px;
+    margin-left: -480px;
+}
+
+.popup h2{
+    margin: 10px 0 20px;
+}
+
+.popup .cta{
+    margin-top: 40px;
+}
+.popup .close{
+    width:80px;
+    height: 80px;
+    background: #FF3300 url(images/relative-pot.png) no-repeat center center; 
+    background-size: 50%;
+    position: absolute;
+    top: -40px;
+    right: -40px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    overflow: hidden;
+    text-indent: -999px;
+    cursor: pointer;
+}
+
+.popup .row{
+
+}
+
+.popup .row:after{
+    content: '';
+    display: table;
+    clear: both;
+    
+}
+.popup .item{
+    float: left;
+    width: 415px;
+    margin-left: 40px;
+    text-align: left;
+}
+
+.popup .item:first-child{
+    margin-left: 0;
+}
+
+.popup .item label{
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.popup .item input[type='text']{
+    display: block;
+    font-size: 30px;
+    font-weight: bold;
+    border: 4px solid #111111;
+    height: 70px;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 15px 20px;
+}
+
+/*FIFTH
+<div class="popup">
+        <div class="blanket"></div>
+        <div class="content"></div>
+        <h2>Fill in Your Details</h2>
+        <form action="">
+            <div class="item">
+                <label for="">Your First Name</label>
+                <input type="text" placeholder"Awesomeface" value="Shirley">
+        </div>
+        <div class="item">
+            <label for="">Last Name</label>
+            <input type="text" placeholder"Circleface">
+    </div>
+    <div class="item">
+        <label for="">Your Favorite Color</label>
+        <input type="text" placeholder"Pink">
+</div>
+    <div class="item">
+        <label for="">Your Favorite Food</label>
+        <input type="text" placeholder"Apple Pie">
+</div>
+        </form>
+       <button class="close">Close</button>
+    </div>
+
+    <button class="cta">I want In!</button>
+</body>
+*/
 
 /*FOURTH
  <div class="sep"></div>
